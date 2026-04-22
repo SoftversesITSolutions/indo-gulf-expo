@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indo Gulf Trade Expo 2026 — Riyadh, Saudi Arabia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #06173A;
+  --navy-mid: #0D2855;
+  --teal: #0A8C87;
+  --teal-light: #12B5AF;
+  --orange: #F5821E;
+  --gold: #C8A037;
+  --white: #FAFAF8;
+  --off: #F0F1F3;
+  --grey-100: #E4E6EC;
+  --grey-300: #A8AEBB;
+  --grey-600: #5C6478;
+  --ink: #0A0F1E;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* ─── NAV ─── */
+#nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(6, 23, 58, 0.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  height: 68px; display: flex; align-items: center;
+}
+.nav-inner {
+  max-width: 1400px; width: 100%; margin: 0 auto;
+  padding: 0 40px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo img { height: 44px; width: auto; }
+.nav-logo-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800; font-size: 1.1rem;
+  color: white; line-height: 1.15; letter-spacing: 0.02em;
+}
+.nav-logo-text span { color: var(--teal-light); display: block; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.14em; }
+nav ul { list-style: none; display: flex; align-items: center; }
+nav ul li a {
+  color: rgba(255,255,255,0.72); text-decoration: none;
+  font-size: 0.82rem; font-weight: 500; letter-spacing: 0.03em;
+  padding: 8px 14px; display: block; transition: color 0.2s;
+}
+nav ul li a:hover { color: white; }
+.nav-cta {
+  background: var(--teal); color: white !important;
+  border-radius: 4px; padding: 8px 22px !important;
+  font-weight: 600 !important;
+}
+.nav-cta:hover { background: var(--teal-light) !important; }
+
+/* ─── HERO (PRESERVED) ─── */
+#hero {
+  min-height: 100vh; background: var(--navy);
+  position: relative; display: flex; align-items: center;
+  overflow: hidden; padding-top: 68px;
+}
+.hero-bg-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(10,140,135,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10,140,135,0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 60% 50%, black 30%, transparent 100%);
+}
+.hero-glow {
+  position: absolute; top: -200px; right: -100px;
+  width: 900px; height: 900px;
+  background: radial-gradient(ellipse, rgba(10,140,135,0.18) 0%, rgba(245,130,30,0.08) 40%, transparent 70%);
+  pointer-events: none;
+}
+.hero-stripe {
+  position: absolute; left: 0; top: 0; bottom: 0; width: 5px;
+  background: linear-gradient(to bottom, var(--orange), var(--teal), var(--gold));
+}
+.hero-content {
+  max-width: 1400px; width: 100%; margin: 0 auto;
+  padding: 80px 40px;
+  display: grid; grid-template-columns: 1fr 420px;
+  gap: 80px; align-items: center;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(200,160,55,0.12);
+  border: 1px solid rgba(200,160,55,0.4);
+  color: var(--gold);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; padding: 6px 16px; border-radius: 2px;
+  margin-bottom: 28px;
+}
+.hero-badge::before {
+  content: ''; width: 6px; height: 6px;
+  background: var(--gold); border-radius: 50%;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.6); }
+}
+.hero-eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal-light); margin-bottom: 16px;
+}
+.hero-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  font-weight: 900; line-height: 0.92;
+  text-transform: uppercase; color: white; margin-bottom: 24px;
+}
+.hero-title em { font-style: normal; color: var(--teal-light); }
+.hero-title .accent-line {
+  display: block;
+  background: linear-gradient(90deg, var(--orange), var(--gold));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-tagline {
+  font-size: 1.15rem; color: rgba(255,255,255,0.7);
+  line-height: 1.6; max-width: 540px; margin-bottom: 40px; font-weight: 300;
+}
+.hero-meta { display: flex; gap: 32px; margin-bottom: 44px; flex-wrap: wrap; }
+.hero-meta-item { display: flex; align-items: center; gap: 10px; }
+.hero-meta-icon {
+  width: 36px; height: 36px;
+  background: rgba(10,140,135,0.2);
+  border: 1px solid rgba(10,140,135,0.4);
+  border-radius: 4px;
+  display: flex; align-items: center; justify-content: center; font-size: 1rem;
+}
+.hero-meta-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: white; font-size: 0.95rem; font-weight: 600; line-height: 1.2;
+}
+.hero-meta-text small {
+  display: block; color: rgba(176,181,195,1);
+  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase;
+}
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--teal); color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 1rem; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 16px 36px;
+  border-radius: 4px; border: none; cursor: pointer; text-decoration: none;
+  display: inline-block; transition: background 0.2s, transform 0.15s;
+}
+.btn-primary:hover { background: var(--teal-light); transform: translateY(-1px); }
+.btn-secondary {
+  background: transparent; color: white;
+  border: 2px solid rgba(255,255,255,0.3);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 1rem; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 14px 36px;
+  border-radius: 4px; cursor: pointer; text-decoration: none;
+  display: inline-block; transition: border-color 0.2s, background 0.2s;
+}
+.btn-secondary:hover { border-color: var(--teal-light); background: rgba(10,140,135,0.1); }
+.hero-panel {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px; padding: 36px;
+  backdrop-filter: blur(8px);
+}
+.hero-panel-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--teal-light);
+  margin-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 16px;
+}
+.countdown-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 32px; }
+.countdown-item {
+  text-align: center; padding: 16px 8px;
+  background: rgba(255,255,255,0.06); border-radius: 4px;
+}
+.countdown-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.2rem; font-weight: 900; color: white; display: block; line-height: 1;
+}
+.countdown-label {
+  font-size: 0.65rem; color: rgba(176,181,195,1);
+  letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; display: block;
+}
+.hero-quick-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hero-quick-stat {
+  padding: 16px; border-left: 3px solid var(--teal);
+  background: rgba(255,255,255,0.04); border-radius: 0 4px 4px 0;
+}
+.hero-quick-stat .num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem; font-weight: 900; color: white;
+}
+.hero-quick-stat .num span { color: var(--orange); }
+.hero-quick-stat .lbl { font-size: 0.72rem; color: rgba(176,181,195,1); }
+
+/* ─── NEW HERO ─── */
+#hero { align-items: flex-end; }
+.h2-photo {
+  position: absolute; inset: 0;
+  background: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80') center 30%/cover no-repeat;
+}
+.h2-grad {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(6,23,58,0.22) 0%,
+    rgba(6,23,58,0.45) 35%,
+    rgba(6,23,58,0.92) 62%,
+    rgba(6,23,58,1) 100%
+  );
+}
+.h2-glow {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 55%;
+  background: radial-gradient(ellipse 70% 60% at 20% 100%, rgba(10,140,135,0.14) 0%, transparent 70%);
+  pointer-events: none;
+}
+.h2-body {
+  position: relative; z-index: 2;
+  max-width: 1400px; width: 100%; margin: 0 auto;
+  padding: 0 40px 44px;
+}
+.h2-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(200,160,55,0.12); border: 1px solid rgba(200,160,55,0.4);
+  color: var(--gold); font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; padding: 5px 14px; border-radius: 2px;
+  margin-bottom: 14px;
+}
+.h2-badge-dot {
+  width: 6px; height: 6px; background: var(--gold); border-radius: 50%;
+  animation: pulse-dot 1.5s ease-in-out infinite; flex-shrink: 0;
+}
+.h2-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(4.5rem, 9vw, 9rem);
+  font-weight: 900; text-transform: uppercase;
+  line-height: 0.88; margin: 0 0 22px; color: white;
+}
+.h2-t-teal { color: var(--teal-light); }
+.h2-t-outline {
+  -webkit-text-stroke: 2px rgba(255,255,255,0.28);
+  color: transparent;
+}
+.h2-bottom {
+  display: flex; align-items: flex-end;
+  justify-content: space-between; gap: 40px;
+  margin-bottom: 28px; flex-wrap: wrap;
+}
+.h2-bottom-left { max-width: 540px; }
+.h2-tagline {
+  font-size: 0.98rem; color: rgba(255,255,255,0.56);
+  line-height: 1.65; margin-bottom: 16px; font-weight: 300;
+}
+.h2-meta-row {
+  display: flex; flex-wrap: wrap; gap: 18px;
+  font-size: 0.8rem; color: rgba(255,255,255,0.5);
+  margin-bottom: 22px;
+}
+.h2-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.h2-cd-panel {
+  flex-shrink: 0; min-width: 256px;
+  background: rgba(6,23,58,0.65);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px; padding: 18px 20px;
+  backdrop-filter: blur(18px); position: relative; overflow: hidden;
+}
+.h2-cd-panel::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--teal), var(--gold), var(--orange));
+}
+.h2-cd-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.64rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal-light);
+  display: block; margin-bottom: 12px;
+}
+.h2-cd-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 5px; }
+.h2-cd-box {
+  background: rgba(255,255,255,0.07); border-radius: 5px;
+  padding: 10px 4px; text-align: center;
+}
+.h2-cd-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem; font-weight: 700; color: white;
+  display: block; line-height: 1;
+}
+.h2-cd-lbl {
+  font-size: 0.52rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.33); display: block; margin-top: 3px;
+}
+.h2-stats-bar {
+  display: flex; border-top: 1px solid rgba(255,255,255,0.09); padding-top: 20px;
+}
+.h2-stat-item {
+  flex: 1; text-align: center; padding: 0 12px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+.h2-stat-item:last-child { border-right: none; }
+.h2-stat-n {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.55rem; font-weight: 700; color: white;
+  display: block; line-height: 1;
+}
+.h2-stat-n sup { font-size: 0.5em; color: var(--teal-light); vertical-align: super; }
+.h2-stat-l {
+  font-size: 0.62rem; color: rgba(255,255,255,0.36); text-transform: uppercase;
+  letter-spacing: 0.06em; display: block; margin-top: 4px;
+}
+@media (max-width: 900px) {
+  .h2-bottom { flex-direction: column; align-items: flex-start; }
+  .h2-cd-panel { width: 100%; min-width: auto; }
+}
+@media (max-width: 600px) {
+  .h2-body { padding: 0 20px 32px; }
+  .h2-title { font-size: clamp(3.2rem, 14vw, 5rem); }
+  .h2-stats-bar { display: none; }
+}
+
+/* ─── VIDEO (PRESERVED) ─── */
+#video { background: var(--off); border-top: 1px solid var(--grey-100); }
+.section { padding: 100px 0; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+.video-layout { display: grid; grid-template-columns: 1fr 340px; gap: 28px; align-items: start; }
+.video-main {
+  background: #000; border-radius: 6px; overflow: hidden;
+  box-shadow: 0 20px 60px rgba(6,23,58,0.2);
+}
+.video-main iframe { width: 100%; aspect-ratio: 16/9; display: block; border: none; }
+.yt-wrap { position: relative; background: #000; overflow: hidden; aspect-ratio: 16/9; }
+.yt-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+.yt-facade { position: absolute; inset: 0; cursor: pointer; z-index: 2; }
+.yt-facade.hidden { display: none; }
+.yt-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yt-play-btn {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px; height: 64px;
+  background: rgba(255,0,0,0.88);
+  border: none; border-radius: 50%; cursor: pointer;
+  pointer-events: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.yt-facade:hover .yt-play-btn { background: red; transform: translate(-50%, -50%) scale(1.1); }
+.yt-play-btn::after {
+  content: '';
+  position: absolute; top: 50%; left: 56%;
+  transform: translate(-50%, -50%);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 18px solid white;
+}
+.video-main-meta { padding: 20px 24px; background: white; }
+.video-main-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; background: var(--teal); color: white;
+  padding: 4px 10px; border-radius: 2px; display: inline-block; margin-bottom: 8px;
+}
+.video-main-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.15rem; font-weight: 700; color: var(--navy);
+}
+.video-playlist { display: flex; flex-direction: column; gap: 10px; max-height: 560px; overflow-y: auto; }
+.video-playlist::-webkit-scrollbar { width: 4px; }
+.video-playlist::-webkit-scrollbar-track { background: var(--grey-100); }
+.video-playlist::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 2px; }
+.video-thumb {
+  display: flex; gap: 12px; align-items: center;
+  background: white; border-radius: 6px; padding: 12px;
+  cursor: pointer; border: 2px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.video-thumb:hover { border-color: var(--grey-100); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+.video-thumb.active { border-color: var(--teal); box-shadow: 0 4px 20px rgba(10,140,135,0.2); }
+.video-thumb-placeholder {
+  width: 90px; height: 58px; border-radius: 4px;
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.vt-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; border-radius: 4px;
+}
+.video-thumb-placeholder .play-icon { position: relative; z-index: 1; }
+.play-icon {
+  width: 22px; height: 22px; background: rgba(255,255,255,0.9);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+}
+.play-icon::after {
+  content: '';
+  border-left: 8px solid var(--navy);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  margin-left: 2px;
+}
+.video-thumb-info { flex: 1; min-width: 0; }
+.video-thumb-cat {
+  font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 4px;
+}
+.video-thumb-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.88rem; font-weight: 600; color: var(--navy);
+  line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.video-thumb-dur { font-size: 0.7rem; color: var(--grey-600); margin-top: 4px; }
+.thumb-color-1 { background: linear-gradient(135deg, #0A2040, #0A5C6B); }
+.thumb-color-2 { background: linear-gradient(135deg, #1A3A0A, #0A4C2A); }
+.thumb-color-3 { background: linear-gradient(135deg, #3A1A00, #6B3A0A); }
+.thumb-color-4 { background: linear-gradient(135deg, #2A0A3A, #4A1A6B); }
+.thumb-color-5 { background: linear-gradient(135deg, #0A1A3A, #0A3A6B); }
+
+.video-section-header { margin-bottom: 48px; }
+.v-eyebrow {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 10px; display: block;
+}
+.v-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 700;
+  color: var(--navy); line-height: 1.1; margin-bottom: 10px;
+}
+.v-title em { font-style: normal; color: var(--teal); }
+.v-sub { font-size: 1rem; color: var(--grey-600); line-height: 1.65; max-width: 520px; font-weight: 300; }
+
+/* ─── STATS — BENTO GRID ─── */
+#stats { background: var(--ink); padding: 0; overflow: hidden; }
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 2px;
+  background: rgba(255,255,255,0.06);
+}
+.bento-cell {
+  background: var(--ink); padding: 56px 52px;
+  position: relative; overflow: hidden;
+  transition: background 0.3s;
+}
+.bento-cell:hover { background: rgba(255,255,255,0.04); }
+.bc-1 { grid-column: span 5; }
+.bc-2 { grid-column: span 3; }
+.bc-3 { grid-column: span 4; border-right: none; }
+.bc-4 { grid-column: span 4; }
+.bc-5 { grid-column: span 5; }
+.bc-6 { grid-column: span 3; }
+
+.bento-label {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: rgba(255,255,255,0.35);
+  margin-bottom: 16px; display: block;
+}
+.bento-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3.5rem, 6vw, 6rem); font-weight: 700;
+  color: white; line-height: 0.9; display: block; margin-bottom: 12px;
+}
+.bento-num sup { font-size: 0.5em; color: var(--teal-light); vertical-align: super; }
+.bento-desc { font-size: 0.88rem; color: rgba(255,255,255,0.45); line-height: 1.6; max-width: 260px; }
+
+.bento-statement {
+  grid-column: span 12;
+  padding: 72px 52px;
+  background: var(--teal);
+  display: flex; align-items: center; justify-content: space-between; gap: 40px;
+}
+.bento-statement-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 700;
+  color: white; line-height: 1.2; max-width: 700px;
+}
+.bento-statement-text span { opacity: 0.6; }
+.bento-cta {
+  flex-shrink: 0;
+  background: white; color: var(--teal);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 0.9rem; letter-spacing: 0.06em;
+  padding: 16px 32px; border-radius: 4px; text-decoration: none;
+  transition: opacity 0.2s; white-space: nowrap;
+}
+.bento-cta:hover { opacity: 0.88; }
+
+.bento-bg-num {
+  position: absolute; right: -10px; bottom: -20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 9rem; font-weight: 700;
+  color: rgba(255,255,255,0.03); line-height: 1;
+  pointer-events: none; user-select: none;
+}
+
+/* ─── ABOUT — MAGAZINE SPLIT ─── */
+#about { background: white; padding: 120px 0; overflow: hidden; }
+.about-mag {
+  display: grid; grid-template-columns: 1fr 1fr; min-height: 600px;
+}
+.about-left {
+  padding: 80px 60px 80px 40px;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative;
+}
+.about-left::after {
+  content: ''; position: absolute; right: 0; top: 10%; bottom: 10%;
+  width: 1px; background: var(--grey-100);
+}
+.about-kicker {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 32px;
+  display: flex; align-items: center; gap: 12px;
+}
+.about-kicker::before {
+  content: ''; width: 32px; height: 2px; background: var(--teal);
+}
+.about-headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.6rem, 4vw, 4rem); font-weight: 700;
+  line-height: 1.05; color: var(--ink); margin-bottom: 32px;
+}
+.about-headline em { font-style: normal; color: var(--teal); }
+.about-body {
+  font-size: 1.05rem; color: var(--grey-600); line-height: 1.8;
+  font-weight: 300; margin-bottom: 44px; max-width: 460px;
+}
+.about-numbers { display: flex; gap: 40px; }
+.about-num-item { }
+.about-num-big {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.8rem; font-weight: 700; color: var(--ink);
+  line-height: 1; display: block;
+}
+.about-num-big span { color: var(--teal); }
+.about-num-label { font-size: 0.8rem; color: var(--grey-600); margin-top: 4px; display: block; }
+
+.about-right {
+  display: grid; grid-template-rows: 1fr 1fr;
+  background: var(--off);
+}
+.about-feature {
+  padding: 48px 52px 48px 60px;
+  border-bottom: 1px solid var(--grey-100);
+  display: flex; gap: 24px; align-items: flex-start;
+  transition: background 0.2s;
+  cursor: default;
+}
+.about-feature:hover { background: white; }
+.about-feature:last-child { border-bottom: none; }
+.about-feat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem; font-weight: 700;
+  color: var(--grey-100); line-height: 1;
+  flex-shrink: 0; min-width: 60px;
+}
+.about-feat-body { }
+.about-feat-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 8px;
+}
+.about-feat-text { font-size: 0.88rem; color: var(--grey-600); line-height: 1.7; }
+.about-feat-tag {
+  display: inline-block; margin-top: 12px;
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--teal);
+  border-bottom: 1px solid var(--teal); padding-bottom: 2px;
+}
+
+/* ─── WHY PARTICIPATE — COLOR BLOCK PANELS ─── */
+#why { background: var(--ink); padding: 120px 0; }
+.why-header { margin-bottom: 64px; }
+.why-eyebrow {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal-light); margin-bottom: 12px; display: block;
+}
+.why-headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.6rem); font-weight: 700;
+  line-height: 1.05; color: white;
+}
+.why-headline em { font-style: normal; color: var(--teal-light); }
+
+.why-panels-wrap {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2px; background: rgba(255,255,255,0.08);
+}
+.why-panel-block {
+  padding: 52px 44px; position: relative; overflow: hidden;
+  background: var(--ink);
+  transition: background 0.3s;
+}
+.why-panel-block:hover { background: rgba(255,255,255,0.03); }
+.wpb-accent { width: 40px; height: 3px; margin-bottom: 32px; }
+.wpb-1 .wpb-accent { background: var(--teal-light); }
+.wpb-2 .wpb-accent { background: var(--gold); }
+.wpb-3 .wpb-accent { background: var(--orange); }
+.wpb-who {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem; font-weight: 700; color: white;
+  margin-bottom: 8px; display: block;
+}
+.wpb-sub { font-size: 0.82rem; color: rgba(255,255,255,0.4); margin-bottom: 36px; }
+.wpb-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+.wpb-list li {
+  display: flex; gap: 14px; align-items: flex-start;
+  font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.55;
+}
+.wpb-list li::before {
+  content: '';
+  width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 8px;
+}
+.wpb-1 .wpb-list li::before { background: var(--teal-light); }
+.wpb-2 .wpb-list li::before { background: var(--gold); }
+.wpb-3 .wpb-list li::before { background: var(--orange); }
+.wpb-list li strong { color: white; font-weight: 600; }
+.wpb-bg-text {
+  position: absolute; bottom: -30px; right: -10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 7rem; font-weight: 700;
+  color: rgba(255,255,255,0.03); pointer-events: none; line-height: 1;
+}
+.wpb-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 36px; font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 0.04em; text-decoration: none;
+}
+.wpb-1 .wpb-link { color: var(--teal-light); }
+.wpb-2 .wpb-link { color: var(--gold); }
+.wpb-3 .wpb-link { color: var(--orange); }
+.wpb-link::after { content: '→'; transition: transform 0.2s; }
+.wpb-link:hover::after { transform: translateX(4px); }
+
+/* ─── SECTORS — EDITORIAL LIST ─── */
+#sectors { background: white; padding: 120px 0; }
+.sectors-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 64px; }
+.sec-headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 700;
+  color: var(--ink); line-height: 1.05;
+}
+.sec-headline em { font-style: normal; color: var(--teal); }
+.sec-count { font-size: 0.85rem; color: var(--grey-600); text-align: right; line-height: 1.6; }
+
+.sectors-list { display: flex; flex-direction: column; gap: 0; }
+.sector-row {
+  display: grid; grid-template-columns: 80px 1fr auto;
+  gap: 0; align-items: stretch;
+  border-top: 1px solid var(--grey-100);
+  cursor: pointer; transition: background 0.25s;
+  overflow: hidden;
+}
+.sector-row:last-child { border-bottom: 1px solid var(--grey-100); }
+.sector-row:hover { background: var(--off); }
+.sector-row:hover .sector-row-name { color: var(--teal); }
+.sector-row:hover .sector-arrow { transform: translateX(4px); }
+
+.sector-row-num {
+  padding: 28px 0 28px 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem; font-weight: 600; color: var(--grey-300);
+  letter-spacing: 0.1em; border-right: 1px solid var(--grey-100);
+}
+.sector-row-body {
+  padding: 28px 40px; display: flex; align-items: center; gap: 20px;
+}
+.sector-row-icon {
+  width: 44px; height: 44px; border-radius: 8px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+}
+.sector-row-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem; font-weight: 700; color: var(--ink);
+  transition: color 0.2s;
+}
+.sector-row-tag {
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--grey-300);
+  margin-top: 4px; display: block;
+}
+.sector-row-right {
+  padding: 28px 32px; display: flex; align-items: center; gap: 20px;
+  border-left: 1px solid var(--grey-100);
+}
+.sector-count-pill {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem; font-weight: 600;
+  color: var(--grey-600);
+  white-space: nowrap;
+}
+.sector-arrow {
+  font-size: 1rem; color: var(--grey-300);
+  transition: transform 0.25s;
+}
+.si-1 { background: rgba(10,140,135,0.1); }
+.si-2 { background: rgba(30,100,200,0.1); }
+.si-3 { background: rgba(245,130,30,0.1); }
+.si-4 { background: rgba(160,70,200,0.1); }
+.si-5 { background: rgba(10,170,80,0.1); }
+.si-6 { background: rgba(200,160,55,0.1); }
+.si-7 { background: rgba(220,60,60,0.1); }
+.si-8 { background: rgba(80,130,220,0.1); }
+
+/* ─── EXPERIENCE (PRESERVED + IMAGES ADDED) ─── */
+#experience { background: var(--navy); }
+.experience-blocks { display: flex; flex-direction: column; gap: 0; }
+.exp-block {
+  display: grid; grid-template-columns: 1fr 1fr; min-height: 420px;
+}
+.exp-block:nth-child(even) { direction: rtl; }
+.exp-block:nth-child(even) > * { direction: ltr; }
+.exp-visual {
+  position: relative; min-height: 420px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.exp-visual-img {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 12px;
+}
+.exp-visual-label {
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5);
+  font-family: monospace; text-align: center;
+  position: relative; z-index: 2;
+}
+.ev1 { background: linear-gradient(135deg, #0a2840 0%, #0a5c6b 100%); }
+.ev2 { background: linear-gradient(135deg, #3a1a00 0%, #6b3a0a 100%); }
+.ev3 { background: linear-gradient(135deg, #1a1a00 0%, #4a4a0a 100%); }
+.ev4 { background: linear-gradient(135deg, #1a0a3a 0%, #3a1a6b 100%); }
+
+/* SVG scene styles */
+.exp-svg-scene { width: 100%; height: 100%; position: absolute; inset: 0; }
+
+.exp-content {
+  padding: 60px 64px; display: flex; flex-direction: column; justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.exp-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 5rem; font-weight: 700; color: rgba(255,255,255,0.05);
+  line-height: 1; margin-bottom: -20px; display: block;
+}
+.exp-icon { font-size: 2rem; margin-bottom: 16px; display: block; }
+.exp-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.8rem; font-weight: 700;
+  color: white; margin-bottom: 12px;
+}
+.exp-text { font-size: 0.9rem; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 380px; }
+.exp-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.exp-pill {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; padding: 5px 14px;
+  border: 1px solid rgba(10,181,175,0.4); color: var(--teal-light);
+  border-radius: 20px;
+}
+
+/* ─── SPEAKERS — EDITORIAL CARDS ─── */
+#speakers { background: var(--off); padding: 120px 0; }
+.speakers-header { margin-bottom: 64px; }
+.sp-eyebrow {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: block;
+}
+.sp-headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 700;
+  color: var(--ink); line-height: 1.05;
+}
+.sp-headline em { font-style: normal; color: var(--teal); }
+
+.speakers-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 16px; margin-bottom: 80px;
+}
+.speaker-card {
+  position: relative; overflow: hidden; border-radius: 6px;
+  cursor: pointer;
+  background: var(--navy-mid);
+}
+.speaker-card:hover .speaker-overlay { opacity: 1; }
+.speaker-card:hover .speaker-photo-bg { transform: scale(1.04); }
+.speaker-photo-bg {
+  width: 100%; aspect-ratio: 3/4;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.4s ease;
+  position: relative;
+}
+.speaker-initials {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 4rem; font-weight: 700;
+  color: rgba(255,255,255,0.15);
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+.speaker-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(6,23,58,0.98) 0%, rgba(6,23,58,0.3) 50%, transparent 100%);
+  opacity: 0.75;
+  transition: opacity 0.3s;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 28px 24px;
+}
+.speaker-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem; font-weight: 700; color: white; margin-bottom: 4px;
+}
+.speaker-role { font-size: 0.78rem; color: var(--teal-light); margin-bottom: 3px; }
+.speaker-org { font-size: 0.72rem; color: rgba(255,255,255,0.5); }
+
+/* Partners strip */
+.partners-strip { }
+.partners-label {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--grey-300);
+  text-align: center; margin-bottom: 28px;
+}
+.partners-track-wrap { overflow: hidden; position: relative; }
+.partners-track-wrap::before, .partners-track-wrap::after {
+  content: ''; position: absolute; top: 0; bottom: 0; z-index: 2; width: 80px;
+  background: linear-gradient(90deg, var(--off), transparent);
+}
+.partners-track-wrap::after { right: 0; left: auto; background: linear-gradient(270deg, var(--off), transparent); }
+.partners-track {
+  display: flex; width: max-content;
+  animation: scroll-partners 30s linear infinite;
+}
+.partners-track:hover { animation-play-state: paused; }
+@keyframes scroll-partners { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.partner-logo {
+  width: 160px; height: 72px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 12px; background: white; border-radius: 6px;
+  border: 1px solid var(--grey-100);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em;
+  color: var(--grey-300); text-align: center; padding: 8px;
+}
+
+/* ─── AGENDA — TIMELINE ─── */
+#agenda { background: white; padding: 120px 0; }
+.agenda-layout { display: grid; grid-template-columns: 280px 1fr; gap: 80px; align-items: start; }
+.agenda-days { display: flex; flex-direction: column; gap: 4px; position: sticky; top: 100px; }
+.agenda-day-btn {
+  display: block; padding: 20px 24px;
+  background: none; border: none; cursor: pointer;
+  text-align: left; transition: background 0.2s;
+  border-radius: 6px;
+}
+.agenda-day-btn:hover { background: var(--off); }
+.agenda-day-btn.active { background: var(--ink); }
+.adb-date {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem; font-weight: 700; display: block;
+  color: var(--grey-300);
+  transition: color 0.2s;
+}
+.agenda-day-btn.active .adb-date { color: white; }
+.adb-label {
+  font-size: 0.75rem; color: var(--grey-300); margin-top: 2px; display: block;
+  transition: color 0.2s;
+}
+.agenda-day-btn.active .adb-label { color: rgba(255,255,255,0.5); }
+.adb-theme {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; margin-top: 6px; display: block;
+  color: var(--grey-300); transition: color 0.2s;
+}
+.agenda-day-btn.active .adb-theme { color: var(--teal-light); }
+
+.agenda-panel { display: none; }
+.agenda-panel.active { display: flex; flex-direction: column; }
+.timeline-item {
+  display: flex; gap: 0; position: relative;
+  padding-bottom: 40px;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item:last-child .tl-line { display: none; }
+.tl-left {
+  width: 80px; flex-shrink: 0;
+  display: flex; flex-direction: column; align-items: center;
+}
+.tl-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--teal); flex-shrink: 0; margin-top: 5px;
+  box-shadow: 0 0 0 4px rgba(10,140,135,0.15);
+}
+.tl-line {
+  width: 1px; flex: 1; background: var(--grey-100); margin-top: 8px;
+}
+.tl-time {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem; font-weight: 600; color: var(--grey-600);
+  margin-left: 0; text-align: center; margin-top: 5px;
+  line-height: 1.2; flex-shrink: 0;
+}
+.tl-body { flex: 1; padding: 0 0 0 20px; }
+.tl-type {
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; padding: 3px 10px; border-radius: 2px;
+  display: inline-block; margin-bottom: 8px;
+}
+.type-keynote { background: rgba(10,140,135,0.1); color: var(--teal); }
+.type-panel { background: rgba(200,160,55,0.1); color: var(--gold); }
+.type-workshop { background: rgba(245,130,30,0.1); color: var(--orange); }
+.type-networking { background: rgba(10,23,58,0.08); color: var(--navy); }
+.tl-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 5px;
+}
+.tl-desc { font-size: 0.85rem; color: var(--grey-600); line-height: 1.6; }
+
+/* ─── TESTIMONIALS — MARQUEE ─── */
+#testimonials { background: var(--off); padding: 100px 0; overflow: hidden; }
+.testi-header { margin-bottom: 56px; }
+.te-eyebrow {
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: block;
+}
+.te-headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3.2rem); font-weight: 700;
+  color: var(--ink); line-height: 1.05;
+}
+.te-headline em { font-style: normal; color: var(--teal); }
+
+.marquee-wrap { overflow: hidden; position: relative; }
+.marquee-track {
+  display: flex; gap: 20px; width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+@keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.testi-card {
+  width: 400px; flex-shrink: 0;
+  background: white; border-radius: 8px; padding: 36px 32px;
+  box-shadow: 0 2px 20px rgba(6,23,58,0.07);
+  border: 1px solid var(--grey-100);
+  position: relative; overflow: hidden;
+}
+.testi-card::before {
+  content: '"';
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 8rem; font-weight: 700; color: var(--teal);
+  line-height: 1; position: absolute; top: -10px; left: 16px;
+  opacity: 0.08;
+}
+.testi-stars { color: var(--gold); font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 16px; }
+.testi-quote {
+  font-size: 0.92rem; color: var(--grey-600); line-height: 1.75;
+  margin-bottom: 28px; font-weight: 300;
+}
+.testi-author { display: flex; gap: 14px; align-items: center; }
+.testi-avatar {
+  width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem; font-weight: 700; color: white;
+}
+.testi-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.92rem; font-weight: 700; color: var(--ink);
+}
+.testi-company { font-size: 0.75rem; color: var(--grey-600); margin-top: 2px; }
+
+/* ─── CTA — TYPOGRAPHIC ─── */
+#cta {
+  background: var(--ink); padding: 60px 0;
+  position: relative; overflow: hidden;
+}
+.cta-bg-word {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22vw; font-weight: 700; color: rgba(255,255,255,0.02);
+  white-space: nowrap; pointer-events: none; user-select: none;
+  line-height: 1;
+}
+.cta-inner { text-align: center; position: relative; z-index: 1; }
+.cta-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--teal-light); margin-bottom: 28px;
+}
+.cta-eyebrow::before, .cta-eyebrow::after { content: '—'; }
+.cta-headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 7vw, 7rem); font-weight: 700;
+  line-height: 0.95; color: white; margin-bottom: 28px;
+  letter-spacing: -0.02em;
+}
+.cta-headline em {
+  font-style: normal; display: block;
+  background: linear-gradient(90deg, var(--teal-light), var(--gold));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.cta-sub { font-size: 1.1rem; color: rgba(255,255,255,0.5); margin-bottom: 56px; font-weight: 300; }
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-btn-a {
+  background: var(--teal); color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 1rem; letter-spacing: 0.04em;
+  padding: 18px 48px; border-radius: 4px; border: none;
+  cursor: pointer; text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+.cta-btn-a:hover { background: var(--teal-light); transform: translateY(-2px); }
+.cta-btn-b {
+  background: transparent; color: white;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 1rem; letter-spacing: 0.04em;
+  padding: 18px 48px; border-radius: 4px;
+  cursor: pointer; text-decoration: none;
+  transition: border-color 0.2s;
+}
+.cta-btn-b:hover { border-color: var(--gold); color: var(--gold); }
+.cta-trust { margin-top: 56px; display: flex; gap: 0; justify-content: center; flex-wrap: wrap; }
+.cta-trust-item {
+  font-size: 0.8rem; color: rgba(255,255,255,0.35);
+  padding: 0 24px; border-right: 1px solid rgba(255,255,255,0.1);
+}
+.cta-trust-item:last-child { border-right: none; }
+
+/* ─── FOOTER ─── */
+footer { background: #020A18; }
+.footer-main { padding: 80px 0 56px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 60px; }
+.footer-brand img { height: 56px; margin-bottom: 20px; display: block; }
+.footer-tagline {
+  font-size: 0.88rem; color: rgba(255,255,255,0.4); line-height: 1.7;
+  max-width: 260px; margin-bottom: 28px;
+}
+.footer-socials { display: flex; gap: 8px; }
+.footer-social {
+  width: 36px; height: 36px; border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.82rem;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.footer-social:hover { background: var(--teal); border-color: var(--teal); color: white; }
+.footer-col-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: white; margin-bottom: 20px;
+}
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a {
+  color: rgba(255,255,255,0.45); text-decoration: none;
+  font-size: 0.88rem; transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--teal-light); }
+.newsletter-note { font-size: 0.85rem; color: rgba(255,255,255,0.4); line-height: 1.65; margin-bottom: 16px; }
+.newsletter-form { display: flex; flex-direction: column; gap: 8px; }
+.newsletter-input {
+  padding: 12px 16px; background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12); border-radius: 4px;
+  color: white; font-size: 0.85rem; font-family: 'DM Sans', sans-serif; outline: none;
+}
+.newsletter-input::placeholder { color: rgba(255,255,255,0.3); }
+.newsletter-input:focus { border-color: var(--teal); }
+.newsletter-btn {
+  padding: 12px; background: var(--teal); border: none;
+  color: white; border-radius: 4px; cursor: pointer;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 0.88rem; letter-spacing: 0.06em;
+  transition: background 0.2s;
+}
+.newsletter-btn:hover { background: var(--teal-light); }
+.footer-bottom {
+  padding: 24px 0; display: flex;
+  justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+}
+.footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.25); }
+.footer-legal { display: flex; gap: 20px; }
+.footer-legal a { font-size: 0.8rem; color: rgba(255,255,255,0.25); text-decoration: none; transition: color 0.2s; }
+.footer-legal a:hover { color: var(--teal-light); }
+
+/* ─── TWEAKS ─── */
+#tweaks-panel {
+  position: fixed; bottom: 24px; right: 24px; z-index: 9000;
+  background: white; border-radius: 10px; padding: 20px 24px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.18);
+  width: 268px; display: none;
+  border: 1px solid var(--grey-100);
+}
+#tweaks-panel.visible { display: block; }
+.tweaks-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink); margin-bottom: 16px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--grey-100);
+}
+.tweak-row { margin-bottom: 14px; }
+.tweak-label { font-size: 0.78rem; color: var(--grey-600); margin-bottom: 6px; font-weight: 500; display: block; }
+.tweak-select {
+  width: 100%; padding: 8px 10px;
+  border: 1px solid var(--grey-100); border-radius: 4px;
+  font-size: 0.82rem; font-family: 'DM Sans', sans-serif;
+  color: var(--ink); background: white;
+}
+.tweak-colors { display: flex; gap: 8px; }
+.tweak-swatch {
+  width: 28px; height: 28px; border-radius: 50%; cursor: pointer;
+  border: 3px solid transparent; transition: border-color 0.15s;
+}
+.tweak-swatch.on { border-color: var(--ink); }
+
+/* ─── BENTO STATS BACKGROUND IMAGES ─── */
+.bc-1 {
+  background: linear-gradient(rgba(6,23,58,0.78),rgba(6,23,58,0.78)),
+              url('static/images/expected_Visitor.jpg') center/cover no-repeat;
+}
+.bc-2 {
+  background: linear-gradient(rgba(6,23,58,0.78),rgba(6,23,58,0.78)),
+              url('static/images/Exhibhiting_Companies.jpg') center/cover no-repeat;
+}
+.bc-3 {
+  background: linear-gradient(rgba(6,23,58,0.78),rgba(6,23,58,0.78)),
+              url('static/images/Countries_Represented.jpg') center/cover no-repeat;
+}
+.bc-4 {
+  background: linear-gradient(rgba(6,23,58,0.78),rgba(6,23,58,0.78)),
+              url('static/images/B2B_Meetings.jpg') center/cover no-repeat;
+}
+.bc-5 {
+  background: linear-gradient(rgba(6,23,58,0.78),rgba(6,23,58,0.78)),
+              url('static/images/Exhibhition_Area.jpg') center/cover no-repeat;
+}
+.bc-6 {
+  background: linear-gradient(rgba(6,23,58,0.78),rgba(6,23,58,0.78)),
+              url('static/images/Conference_Sessions.jpg') center/cover no-repeat;
+}
+.bc-1:hover {
+  background: linear-gradient(rgba(6,23,58,0.68),rgba(6,23,58,0.68)),
+              url('static/images/expected_Visitor.jpg') center/cover no-repeat;
+}
+.bc-2:hover {
+  background: linear-gradient(rgba(6,23,58,0.68),rgba(6,23,58,0.68)),
+              url('static/images/Exhibhiting_Companies.jpg') center/cover no-repeat;
+}
+.bc-3:hover {
+  background: linear-gradient(rgba(6,23,58,0.68),rgba(6,23,58,0.68)),
+              url('static/images/Countries_Represented.jpg') center/cover no-repeat;
+}
+.bc-4:hover {
+  background: linear-gradient(rgba(6,23,58,0.68),rgba(6,23,58,0.68)),
+              url('static/images/B2B_Meetings.jpg') center/cover no-repeat;
+}
+.bc-5:hover {
+  background: linear-gradient(rgba(6,23,58,0.68),rgba(6,23,58,0.68)),
+              url('static/images/Exhibhition_Area.jpg') center/cover no-repeat;
+}
+.bc-6:hover {
+  background: linear-gradient(rgba(6,23,58,0.68),rgba(6,23,58,0.68)),
+              url('static/images/Conference_Sessions.jpg') center/cover no-repeat;
+}
+
+/* ─── EXPERIENCE IMAGES ─── */
+.exp-visual-photo {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
+}
+
+/* ─── CTA BACKGROUND ─── */
+#cta {
+  background-image: url('static/images/Global_Trade.jpg');
+  background-size: cover; background-position: top center;
+}
+#cta::before {
+  content: ''; position: absolute; inset: 0;
+  background: rgba(10,15,30,0.90); z-index: 0;
+}
+.cta-bg-word { position: absolute; z-index: 1; }
+.cta-inner { position: relative; z-index: 1; }
+
+/* ─── VIDEO GRID ─── */
+.video-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+}
+.video-grid-item {
+  border-radius: 6px; overflow: hidden;
+  background: #000; box-shadow: 0 8px 32px rgba(6,23,58,0.18);
+}
+.video-grid-item iframe {
+  width: 100%; aspect-ratio: 16/9; display: block; border: none;
+}
+@media (max-width: 768px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── FADE IN ─── */
+.fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.fade-in.visible { opacity: 1; transform: none; }
+
+/* ─── MODAL ─── */
+#reg-modal {
+  display: none; position: fixed; inset: 0; z-index: 9999;
+  background: rgba(6,23,58,0.72); backdrop-filter: blur(6px);
+  align-items: center; justify-content: center; padding: 20px;
+}
+#reg-modal.open { display: flex; }
+.modal-box {
+  background: #0d1f45; border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px; width: 100%; max-width: 540px;
+  max-height: 90vh; overflow-y: auto;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  animation: modal-in 0.22s ease;
+}
+@keyframes modal-in {
+  from { opacity:0; transform: translateY(16px) scale(0.98); }
+  to   { opacity:1; transform: none; }
+}
+.modal-box::-webkit-scrollbar { width: 4px; }
+.modal-box::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 2px; }
+.modal-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 28px 32px 0;
+}
+.modal-tabs {
+  display: flex; gap: 4px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px; padding: 4px;
+  margin: 0 32px 0;
+}
+.modal-tab {
+  flex: 1; padding: 8px 0; border: none; border-radius: 4px;
+  background: transparent; color: rgba(255,255,255,0.45);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em;
+  cursor: pointer; transition: background 0.18s, color 0.18s;
+}
+.modal-tab.active { background: var(--teal); color: white; }
+.modal-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem; font-weight: 700; color: white;
+}
+.modal-close {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: transparent; color: rgba(255,255,255,0.6);
+  font-size: 1.1rem; cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+  transition: background 0.2s, color 0.2s; flex-shrink: 0;
+}
+.modal-close:hover { background: rgba(255,255,255,0.1); color: white; }
+.modal-form { display: none; padding: 24px 32px 32px; }
+.modal-form.active { display: block; }
+.modal-subtitle {
+  font-size: 0.82rem; color: rgba(255,255,255,0.4);
+  margin-bottom: 24px; line-height: 1.5;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-group { margin-bottom: 14px; }
+.form-group label {
+  display: block; font-size: 0.75rem; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5); margin-bottom: 6px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%; padding: 11px 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 5px; color: white;
+  font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+  outline: none; transition: border-color 0.2s;
+  -webkit-appearance: none;
+}
+.form-group select option { background: #0d1f45; color: white; }
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(255,255,255,0.25); }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--teal); }
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error { border-color: #e55; }
+.form-group textarea { resize: vertical; min-height: 88px; }
+.modal-submit {
+  width: 100%; padding: 14px;
+  background: var(--teal); border: none; border-radius: 5px;
+  color: white; font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 0.95rem; letter-spacing: 0.06em;
+  cursor: pointer; margin-top: 8px;
+  transition: background 0.2s, transform 0.15s;
+}
+.modal-submit:hover { background: var(--teal-light); transform: translateY(-1px); }
+.modal-success {
+  display: none; text-align: center;
+  padding: 48px 32px; color: white;
+}
+.modal-success.active { display: block; }
+.modal-success-icon {
+  width: 56px; height: 56px; background: var(--teal);
+  border-radius: 50%; margin: 0 auto 20px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+}
+.modal-success h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.3rem; font-weight: 700; margin-bottom: 10px;
+}
+.modal-success p { font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
+@media (max-width: 540px) {
+  .modal-header, .modal-tabs, .modal-form { padding-left: 20px; padding-right: 20px; }
+  .modal-tabs { margin-left: 20px; margin-right: 20px; }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1100px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .bc-1,.bc-2,.bc-3,.bc-4,.bc-5,.bc-6 { grid-column: span 1; }
+  .bento-statement { grid-column: span 2; flex-direction: column; }
+  .about-mag { grid-template-columns: 1fr; }
+  .about-left::after { display: none; }
+  .why-panels-wrap { grid-template-columns: 1fr; }
+  .speakers-grid { grid-template-columns: repeat(2, 1fr); }
+  .agenda-layout { grid-template-columns: 1fr; }
+  .agenda-days { position: static; flex-direction: row; overflow-x: auto; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .exp-block { grid-template-columns: 1fr; }
+  .exp-block:nth-child(even) { direction: ltr; }
+}
+@media (max-width: 768px) {
+  .section { padding: 72px 0; }
+  .container { padding: 0 20px; }
+  .nav-inner { padding: 0 20px; }
+  nav ul { display: none; }
+  .hero-content { grid-template-columns: 1fr; }
+  .hero-panel { display: none; }
+  .video-layout { grid-template-columns: 1fr; }
+  .video-playlist { flex-direction: row; overflow-x: auto; max-height: none; }
+  .video-thumb { min-width: 200px; }
+  .sectors-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .speakers-grid { grid-template-columns: 1fr 1fr; }
+  .cta-headline { font-size: 2.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="static/images/Indo_Gulf_Expos.png" alt="Indo Gulf Expos">
+      <span class="nav-logo-text">
+        INDO GULF TRADE EXPO
+        <span>RIYADH · SAUDI ARABIA · 2026</span>
+      </span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#why">Why Join</a></li>
+        <li><a href="#sectors">Sectors</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#" class="nav-cta" data-modal="exhibitor">Register Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     OLD HERO — preserved, not active
+     ═══════════════════════════════════════════════
+<section id="hero-old">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-stripe"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge">Official Edition · Riyadh 2026</div>
+      <p class="hero-eyebrow">India–Gulf Business Gateway</p>
+      <h1 class="hero-title">
+        Indo Gulf<br>
+        <em>Trade</em><br>
+        <span class="accent-line">Expo 2026</span>
+      </h1>
+      <p class="hero-tagline">The premier platform connecting Indian industry leaders with Gulf markets. Three days of trade, investment, and limitless opportunity.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <div class="hero-meta-icon">📅</div>
+          <div class="hero-meta-text"><small>Date</small>14–16 November 2026</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-icon">📍</div>
+          <div class="hero-meta-text"><small>Venue</small>Riyadh Exhibition Centre</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-icon">🌐</div>
+          <div class="hero-meta-text"><small>Countries</small>30+ Nations Represented</div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary" data-modal="exhibitor">Register Now</a>
+        <a href="#" class="btn-secondary" data-modal="exhibitor">Book a Booth</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="hero-panel-title">Countdown to Expo</div>
+      <div class="countdown-grid">
+        <div class="countdown-item"><span class="countdown-num">--</span><span class="countdown-label">Days</span></div>
+        <div class="countdown-item"><span class="countdown-num">--</span><span class="countdown-label">Hours</span></div>
+        <div class="countdown-item"><span class="countdown-num">--</span><span class="countdown-label">Mins</span></div>
+        <div class="countdown-item"><span class="countdown-num">--</span><span class="countdown-label">Secs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+════════════════════════════════════════════════ -->
+
+<!-- NEW HERO -->
+<section id="hero">
+  <div class="h2-photo"></div>
+  <div class="h2-grad"></div>
+  <div class="h2-glow"></div>
+
+  <div class="h2-body">
+    <div class="h2-badge">
+      <span class="h2-badge-dot"></span>
+      Official 3rd Edition &nbsp;·&nbsp; Riyadh, Saudi Arabia
+    </div>
+
+    <h1 class="h2-title">
+      Indo Gulf <span class="h2-t-teal">Trade</span><br>
+      Expo <span class="h2-t-outline">2026</span>
+    </h1>
+
+    <div class="h2-bottom">
+      <div class="h2-bottom-left">
+        <p class="h2-tagline">The premier platform connecting India's industrial powerhouse with the Gulf's fastest-growing markets. Three days. 500+ exhibitors. Limitless opportunity.</p>
+        <div class="h2-meta-row">
+          <span>📅 14–16 November 2026</span>
+          <span>📍 Riyadh Exhibition Centre</span>
+          <span>🌐 30+ Nations Represented</span>
+        </div>
+        <div class="h2-actions">
+          <a href="#" class="btn-primary" data-modal="exhibitor">Register Now</a>
+          <a href="#" class="btn-secondary" data-modal="exhibitor">Book a Booth</a>
+        </div>
+      </div>
+
+      <div class="h2-cd-panel">
+        <span class="h2-cd-label">Countdown to Expo</span>
+        <div class="h2-cd-grid">
+          <div class="h2-cd-box"><span class="h2-cd-num" id="cd-days">--</span><span class="h2-cd-lbl">Days</span></div>
+          <div class="h2-cd-box"><span class="h2-cd-num" id="cd-hours">--</span><span class="h2-cd-lbl">Hours</span></div>
+          <div class="h2-cd-box"><span class="h2-cd-num" id="cd-mins">--</span><span class="h2-cd-lbl">Mins</span></div>
+          <div class="h2-cd-box"><span class="h2-cd-num" id="cd-secs">--</span><span class="h2-cd-lbl">Secs</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h2-stats-bar">
+      <div class="h2-stat-item"><span class="h2-stat-n">20K<sup>+</sup></span><span class="h2-stat-l">Expected Visitors</span></div>
+      <div class="h2-stat-item"><span class="h2-stat-n">500<sup>+</sup></span><span class="h2-stat-l">Exhibiting Companies</span></div>
+      <div class="h2-stat-item"><span class="h2-stat-n">30<sup>+</sup></span><span class="h2-stat-l">Countries</span></div>
+      <div class="h2-stat-item"><span class="h2-stat-n">₹2B<sup>+</sup></span><span class="h2-stat-l">Trade Expected</span></div>
+      <div class="h2-stat-item"><span class="h2-stat-n">2K<sup>+</sup></span><span class="h2-stat-l">B2B Meetings</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO SHOWCASE -->
+<section id="video" class="section">
+  <div class="container">
+    <div class="video-section-header">
+      <span class="v-eyebrow">In Focus</span>
+      <h2 class="v-title">Voices from the <em>Expo Floor</em></h2>
+      <p class="v-sub">Hear from exhibitors, visitors, and business leaders who have experienced the power of Indo Gulf Trade Expo firsthand.</p>
+    </div>
+    <div class="video-layout">
+      <div>
+        <div class="video-main">
+          <div class="yt-wrap">
+            <div class="yt-facade" id="main-facade" data-id="pramd7IrhsU">
+              <img src="https://img.youtube.com/vi/pramd7IrhsU/hqdefault.jpg" alt="Video thumbnail">
+              <div class="yt-play-btn"></div>
+            </div>
+            <iframe id="main-video" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="video-main-meta">
+            <span class="video-main-label" id="main-label">Event Highlights</span>
+            <div class="video-main-title" id="main-title">Indo Gulf Trade Expo — Official Highlights</div>
+          </div>
+        </div>
+      </div>
+      <div class="video-playlist" id="playlist">
+        <div class="video-thumb active" onclick="switchVideo(0)" data-id="pramd7IrhsU" data-label="Event Highlights" data-title="Indo Gulf Trade Expo — Official Highlights">
+          <div class="video-thumb-placeholder"><img class="vt-img" src="https://img.youtube.com/vi/pramd7IrhsU/hqdefault.jpg" alt=""><div class="play-icon"></div></div>
+          <div class="video-thumb-info"><div class="video-thumb-cat">Event Highlights</div><div class="video-thumb-title">Indo Gulf Trade Expo — Official Highlights</div></div>
+        </div>
+        <div class="video-thumb" onclick="switchVideo(1)" data-id="1gPCrGP9HZ8" data-label="Exhibitor Story" data-title="How We Scaled to Gulf Markets">
+          <div class="video-thumb-placeholder"><img class="vt-img" src="https://img.youtube.com/vi/1gPCrGP9HZ8/hqdefault.jpg" alt=""><div class="play-icon"></div></div>
+          <div class="video-thumb-info"><div class="video-thumb-cat">Exhibitor Story</div><div class="video-thumb-title">How We Scaled to Gulf Markets</div></div>
+        </div>
+        <div class="video-thumb" onclick="switchVideo(2)" data-id="MxkVJ85ArlQ" data-label="Visitor Experience" data-title="Why I Attend Every Year">
+          <div class="video-thumb-placeholder"><img class="vt-img" src="https://img.youtube.com/vi/MxkVJ85ArlQ/hqdefault.jpg" alt=""><div class="play-icon"></div></div>
+          <div class="video-thumb-info"><div class="video-thumb-cat">Visitor Experience</div><div class="video-thumb-title">Why I Attend Every Year</div></div>
+        </div>
+        <div class="video-thumb" onclick="switchVideo(3)" data-id="5KBRou0Mvw0" data-label="Expert Interview" data-title="India–Gulf Trade Outlook 2026">
+          <div class="video-thumb-placeholder"><img class="vt-img" src="https://img.youtube.com/vi/5KBRou0Mvw0/hqdefault.jpg" alt=""><div class="play-icon"></div></div>
+          <div class="video-thumb-info"><div class="video-thumb-cat">Expert Interview</div><div class="video-thumb-title">India–Gulf Trade Outlook 2026</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS — BENTO -->
+<section id="stats">
+  <div class="bento-grid">
+    <div class="bento-cell bc-1 fade-in">
+      <span class="bento-label">Expected Visitors</span>
+      <span class="bento-num">20<sup>K+</sup></span>
+      <p class="bento-desc">Decision-makers, buyers, and trade delegates from across Asia and the Gulf converging under one roof.</p>
+      <span class="bento-bg-num">20K</span>
+    </div>
+    <div class="bento-cell bc-2 fade-in">
+      <span class="bento-label">Exhibiting Companies</span>
+      <span class="bento-num">500<sup>+</sup></span>
+      <p class="bento-desc">Indian manufacturers, service providers, and innovators ready to do business.</p>
+      <span class="bento-bg-num">500</span>
+    </div>
+    <div class="bento-cell bc-3 fade-in">
+      <span class="bento-label">Countries Represented</span>
+      <span class="bento-num">30<sup>+</sup></span>
+      <p class="bento-desc">Global delegation presence spanning South Asia, GCC, Africa, and Europe.</p>
+      <span class="bento-bg-num">30</span>
+    </div>
+    <div class="bento-cell bc-4 fade-in">
+      <span class="bento-label">B2B Meetings Scheduled</span>
+      <span class="bento-num">2<sup>K+</sup></span>
+      <p class="bento-desc">Curated buyer-seller meetings pre-scheduled via AI-powered matchmaking.</p>
+      <span class="bento-bg-num">2K</span>
+    </div>
+    <div class="bento-cell bc-5 fade-in">
+      <span class="bento-label">Exhibition Area</span>
+      <span class="bento-num">50<sup>K sqm</sup></span>
+      <p class="bento-desc">Eight dedicated industry halls across 50,000 square metres of premium exhibition space.</p>
+      <span class="bento-bg-num">50K</span>
+    </div>
+    <div class="bento-cell bc-6 fade-in">
+      <span class="bento-label">Conference Sessions</span>
+      <span class="bento-num">60<sup>+</sup></span>
+      <p class="bento-desc">Keynotes, panels, and workshops over three packed days of programming.</p>
+      <span class="bento-bg-num">60</span>
+    </div>
+    <div class="bento-statement fade-in">
+      <p class="bento-statement-text">The India–Gulf trade corridor represents <span>$200B+</span> in annual bilateral trade. <strong>This is where that number grows.</strong></p>
+      <a href="#" class="bento-cta" data-modal="exhibitor">Register Now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT — MAGAZINE SPLIT -->
+<section id="about">
+  <div style="max-width:1400px;margin:0 auto;padding:0 40px;">
+    <div class="about-mag fade-in">
+      <div class="about-left">
+        <span class="about-kicker">About the Expo</span>
+        <h2 class="about-headline">Where India Meets<br>the <em>Gulf</em></h2>
+        <p class="about-body">Indo Gulf Trade Expo is the definitive bridge between India's industrial powerhouse and the Gulf's rapidly growing markets — creating direct pathways for trade, investment, and lasting partnerships.</p>
+        <div class="about-numbers">
+          <div class="about-num-item">
+            <span class="about-num-big">3<span>rd</span></span>
+            <span class="about-num-label">Annual Edition</span>
+          </div>
+          <div class="about-num-item">
+            <span class="about-num-big">8</span>
+            <span class="about-num-label">Industry Verticals</span>
+          </div>
+          <div class="about-num-item">
+            <span class="about-num-big">3</span>
+            <span class="about-num-label">Days of Events</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-feature">
+          <span class="about-feat-num">01</span>
+          <div class="about-feat-body">
+            <div class="about-feat-title">Multi-Sector Coverage</div>
+            <p class="about-feat-text">From manufacturing to fintech — 8 high-growth industry verticals under one roof, spanning 50,000 sqm of premium exhibition space in Riyadh.</p>
+            <span class="about-feat-tag">8 Sectors</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <span class="about-feat-num">02</span>
+          <div class="about-feat-body">
+            <div class="about-feat-title">AI-Powered B2B Matchmaking</div>
+            <p class="about-feat-text">Smart meeting scheduler ensures every attendee connects with their most relevant trade counterparts — before the expo even begins.</p>
+            <span class="about-feat-tag">2,000+ Meetings</span>
+          </div>
+        </div>
+        <div class="about-feature" style="border-bottom:none">
+          <span class="about-feat-num">03</span>
+          <div class="about-feat-body">
+            <div class="about-feat-title">Government-Backed Platform</div>
+            <p class="about-feat-text">Endorsed by India's Ministry of Commerce & Industry and Saudi Arabia's MISA — with official national pavilions and diplomatic support.</p>
+            <span class="about-feat-tag">Official Endorsement</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY PARTICIPATE -->
+<section id="why">
+  <div class="container">
+    <div class="why-header fade-in">
+      <span class="why-eyebrow">Why Join</span>
+      <h2 class="why-headline">Built for Every<br><em>Stakeholder</em></h2>
+    </div>
+    <div class="why-panels-wrap fade-in">
+      <div class="why-panel-block wpb-1">
+        <div class="wpb-accent"></div>
+        <span class="wpb-who">For Exhibitors</span>
+        <p class="wpb-sub">Put your brand in front of 20,000+ active Gulf buyers</p>
+        <ul class="wpb-list">
+          <li><strong>Direct market access</strong> to pre-qualified Gulf importers and distributors actively sourcing Indian products</li>
+          <li><strong>Export leads pipeline</strong> — previous exhibitors averaged 47 qualified contacts per booth</li>
+          <li><strong>On-site government support</strong> for export documentation, RCMC and trade finance</li>
+          <li><strong>Brand building</strong> across India-Gulf trade media reaching 500K+ professionals</li>
+        </ul>
+        <a href="#" class="wpb-link" data-modal="exhibitor">Book a Booth</a>
+        <span class="wpb-bg-text">EX</span>
+      </div>
+      <div class="why-panel-block wpb-2">
+        <div class="wpb-accent"></div>
+        <span class="wpb-who">For Visitors</span>
+        <p class="wpb-sub">Source, compare, and negotiate with 500+ suppliers in 3 days</p>
+        <ul class="wpb-list">
+          <li><strong>Compare 500+ Indian suppliers</strong> across 8 industry sectors in one structured event</li>
+          <li><strong>Knowledge Summit</strong> with policy briefings on India-Gulf trade corridors and market intelligence</li>
+          <li><strong>Pre-scheduled meetings</strong> — register your sourcing needs and arrive with a full day-one agenda</li>
+          <li><strong>Free entry</strong> with visa facilitation and hosted buyer programme available</li>
+        </ul>
+        <a href="#" class="wpb-link" data-modal="visitor">Register Free</a>
+        <span class="wpb-bg-text">VI</span>
+      </div>
+      <div class="why-panel-block wpb-3">
+        <div class="wpb-accent"></div>
+        <span class="wpb-who">For Sponsors</span>
+        <p class="wpb-sub">Own your category across the India-Gulf trade corridor</p>
+        <ul class="wpb-list">
+          <li><strong>Category exclusivity</strong> — become the definitive brand in your industry segment for 3 days</li>
+          <li><strong>100K+ impressions</strong> across all official communications, keynote stage, and digital channels</li>
+          <li><strong>Invite-only executive access</strong> — Sponsors Lounge with ministry officials and C-suite leaders</li>
+          <li><strong>Thought leadership</strong> — speaking slots and co-branded conference sessions available</li>
+        </ul>
+        <a href="#" class="wpb-link" data-modal="sponsor">Enquire Now</a>
+        <span class="wpb-bg-text">SP</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORS — EDITORIAL LIST -->
+<section id="sectors">
+  <div class="container">
+    <div class="sectors-header fade-in">
+      <div>
+        <span style="font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:10px;">Industry Focus</span>
+        <h2 class="sec-headline">8 Sectors.<br><em>Infinite</em> Opportunity.</h2>
+      </div>
+      <div class="sec-count">
+        Spanning <strong>500+ exhibiting companies</strong><br>across the full breadth of India–Gulf commerce
+      </div>
+    </div>
+    <div class="sectors-list fade-in">
+      <div class="sector-row">
+        <span class="sector-row-num">01</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-1">💻</div>
+          <div><span class="sector-row-name">Technology & IT</span><span class="sector-row-tag">Software · AI · Cybersecurity · Cloud</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">80+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+      <div class="sector-row">
+        <span class="sector-row-num">02</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-2">🏗️</div>
+          <div><span class="sector-row-name">Manufacturing</span><span class="sector-row-tag">Industrial · Auto Parts · Textiles · Chemicals</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">120+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+      <div class="sector-row">
+        <span class="sector-row-num">03</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-3">📦</div>
+          <div><span class="sector-row-name">Logistics & Trade</span><span class="sector-row-tag">Freight · Warehousing · Cold Chain · Ports</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">60+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+      <div class="sector-row">
+        <span class="sector-row-num">04</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-4">🛒</div>
+          <div><span class="sector-row-name">Retail & FMCG</span><span class="sector-row-tag">Consumer Goods · Packaging · Brands · Beauty</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">90+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+      <div class="sector-row">
+        <span class="sector-row-num">05</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-5">⚡</div>
+          <div><span class="sector-row-name">Energy & Clean Tech</span><span class="sector-row-tag">Solar · Green Hydrogen · EV · Storage</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">45+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+      <div class="sector-row">
+        <span class="sector-row-num">06</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-6">🏥</div>
+          <div><span class="sector-row-name">Healthcare & Pharma</span><span class="sector-row-tag">Generics · Medtech · Diagnostics · Wellness</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">55+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+      <div class="sector-row">
+        <span class="sector-row-num">07</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-7">🍽️</div>
+          <div><span class="sector-row-name">Food & Agri</span><span class="sector-row-tag">Processed Foods · Spices · Grains · Agritech</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">70+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+      <div class="sector-row">
+        <span class="sector-row-num">08</span>
+        <div class="sector-row-body">
+          <div class="sector-row-icon si-8">💰</div>
+          <div><span class="sector-row-name">Fintech & Banking</span><span class="sector-row-tag">Payments · Trade Finance · Insurance · Remittance</span></div>
+        </div>
+        <div class="sector-row-right"><span class="sector-count-pill">40+ Exhibitors</span><span class="sector-arrow">→</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE — PRESERVED + IMAGES -->
+<section id="experience" class="section" style="padding:0;background:var(--navy);">
+  <div class="container" style="padding-top:100px;padding-bottom:60px;">
+    <span style="font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal-light);display:block;margin-bottom:12px;">The Experience</span>
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:700;color:white;line-height:1.05;">Three Days That <span style="color:var(--teal-light);">Transform</span> Trade</h2>
+  </div>
+  <div class="experience-blocks">
+
+    <div class="exp-block fade-in">
+      <!-- IMAGE LEFT -->
+      <div class="exp-visual ev1">
+        <img class="exp-visual-photo" src="static/images/B2B_Matchmaking.jpg" alt="B2B Matchmaking Summit">
+      </div>
+      <div class="exp-content">
+        <span class="exp-num">01</span>
+        <span class="exp-icon">🤝</span>
+        <div class="exp-title">B2B Matchmaking Summit</div>
+        <p class="exp-text">AI-curated meetings with pre-qualified buyers and sellers. Submit your interests in advance, and arrive on Day 1 with a packed schedule of relevant meetings.</p>
+        <div class="exp-pills">
+          <span class="exp-pill">500+ Scheduled Meetings</span>
+          <span class="exp-pill">Pre-Qualified</span>
+          <span class="exp-pill">AI-Powered</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-block fade-in">
+      <div class="exp-content">
+        <span class="exp-num">02</span>
+        <span class="exp-icon">🎤</span>
+        <div class="exp-title">Keynote Conferences</div>
+        <p class="exp-text">Hear from government ministers, trade economists, and industry disruptors on the future of India-Gulf commerce. Insight that drives strategy.</p>
+        <div class="exp-pills">
+          <span class="exp-pill">3 Main Stages</span>
+          <span class="exp-pill">40+ Speakers</span>
+          <span class="exp-pill">Live Streaming</span>
+        </div>
+      </div>
+      <!-- IMAGE RIGHT -->
+      <div class="exp-visual ev2">
+        <img class="exp-visual-photo" src="static/images/Conference.jpg" alt="Keynote Conference">
+      </div>
+    </div>
+
+    <div class="exp-block fade-in">
+      <!-- IMAGE LEFT -->
+      <div class="exp-visual ev3">
+        <img class="exp-visual-photo" src="static/images/Product_Demonstration.jpg" alt="Live Product Demonstration">
+      </div>
+      <div class="exp-content">
+        <span class="exp-num">03</span>
+        <span class="exp-icon">🔬</span>
+        <div class="exp-title">Live Product Demonstrations</div>
+        <p class="exp-text">See innovations in motion. Dedicated demo zones for technology, manufacturing, and agritech give buyers hands-on access to evaluate products live.</p>
+        <div class="exp-pills">
+          <span class="exp-pill">12 Demo Zones</span>
+          <span class="exp-pill">Live Interaction</span>
+          <span class="exp-pill">No Barriers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-block fade-in">
+      <div class="exp-content">
+        <span class="exp-num">04</span>
+        <span class="exp-icon">🌐</span>
+        <div class="exp-title">Networking Lounges</div>
+        <p class="exp-text">Curated evening receptions, delegation dinners, and hosted buyer programmes. The deals made here often outlast the expo itself.</p>
+        <div class="exp-pills">
+          <span class="exp-pill">VIP Lounge</span>
+          <span class="exp-pill">Delegation Dinners</span>
+          <span class="exp-pill">Hosted Buyers</span>
+        </div>
+      </div>
+      <!-- IMAGE RIGHT -->
+      <div class="exp-visual ev4">
+        <img class="exp-visual-photo" src="static/images/Networking_Lounges.jpg" alt="Networking Lounge">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section id="speakers">
+  <div class="container">
+    <div class="speakers-header fade-in">
+      <span class="sp-eyebrow">Keynote Speakers</span>
+      <h2 class="sp-headline">Voices Shaping <em>Global Trade</em></h2>
+    </div>
+    <div class="speakers-grid fade-in">
+      <div class="speaker-card">
+        <div class="speaker-photo-bg" style="background:linear-gradient(160deg,#0d2855,#0a5c8a)">
+          <span class="speaker-initials">RK</span>
+        </div>
+        <div class="speaker-overlay">
+          <div class="speaker-name">Rajiv Kumar</div>
+          <div class="speaker-role">Secretary, DPIIT</div>
+          <div class="speaker-org">Ministry of Commerce & Industry, India</div>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <div class="speaker-photo-bg" style="background:linear-gradient(160deg,#0a2a0a,#0a4a2a)">
+          <span class="speaker-initials">FA</span>
+        </div>
+        <div class="speaker-overlay">
+          <div class="speaker-name">Fatimah Al-Rashid</div>
+          <div class="speaker-role">Director General</div>
+          <div class="speaker-org">Saudi Export Development Authority</div>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <div class="speaker-photo-bg" style="background:linear-gradient(160deg,#3a1a00,#6a3a10)">
+          <span class="speaker-initials">AS</span>
+        </div>
+        <div class="speaker-overlay">
+          <div class="speaker-name">Anand Shah</div>
+          <div class="speaker-role">Co-Founder & CEO</div>
+          <div class="speaker-org">TradeBridge Technologies</div>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <div class="speaker-photo-bg" style="background:linear-gradient(160deg,#1a0a3a,#3a1a6a)">
+          <span class="speaker-initials">NK</span>
+        </div>
+        <div class="speaker-overlay">
+          <div class="speaker-name">Nadia Khalil</div>
+          <div class="speaker-role">Chief Investment Officer</div>
+          <div class="speaker-org">Gulf Sovereign Partners</div>
+        </div>
+      </div>
+    </div>
+    <div class="partners-strip fade-in">
+      <div class="partners-label">Official Partners & Supporters</div>
+      <div class="partners-track-wrap">
+        <div class="partners-track">
+          <div class="partner-logo">Ministry of Commerce</div><div class="partner-logo">MISA Saudi</div>
+          <div class="partner-logo">FICCI</div><div class="partner-logo">CII India</div>
+          <div class="partner-logo">Invest India</div><div class="partner-logo">Saudi Aramco</div>
+          <div class="partner-logo">Tata Group</div><div class="partner-logo">Air India</div>
+          <div class="partner-logo">SBI International</div><div class="partner-logo">EXIM Bank</div>
+          <div class="partner-logo">Ministry of Commerce</div><div class="partner-logo">MISA Saudi</div>
+          <div class="partner-logo">FICCI</div><div class="partner-logo">CII India</div>
+          <div class="partner-logo">Invest India</div><div class="partner-logo">Saudi Aramco</div>
+          <div class="partner-logo">Tata Group</div><div class="partner-logo">Air India</div>
+          <div class="partner-logo">SBI International</div><div class="partner-logo">EXIM Bank</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA — TIMELINE -->
+<section id="agenda">
+  <div class="container">
+    <div class="fade-in" style="margin-bottom:64px">
+      <span style="font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:12px;">Programme</span>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:var(--ink);line-height:1.05;">Three Days, <span style="color:var(--teal)">Packed</span> Schedule</h2>
+    </div>
+    <div class="agenda-layout fade-in">
+      <div class="agenda-days">
+        <button class="agenda-day-btn active" onclick="switchDay(this,'day1')">
+          <span class="adb-date">14 Nov</span>
+          <span class="adb-label">Day One</span>
+          <span class="adb-theme">Opening & Trade Floor</span>
+        </button>
+        <button class="agenda-day-btn" onclick="switchDay(this,'day2')">
+          <span class="adb-date">15 Nov</span>
+          <span class="adb-label">Day Two</span>
+          <span class="adb-theme">Summits & Sectors</span>
+        </button>
+        <button class="agenda-day-btn" onclick="switchDay(this,'day3')">
+          <span class="adb-date">16 Nov</span>
+          <span class="adb-label">Day Three</span>
+          <span class="adb-theme">MoUs & Closing</span>
+        </button>
+      </div>
+      <div>
+        <div id="day1" class="agenda-panel active">
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-time">09:00</div><div class="tl-body"><span class="tl-type type-keynote">Keynote</span><div class="tl-title">Grand Opening Ceremony</div><p class="tl-desc">Official inauguration by Ministers of Commerce from India & Saudi Arabia</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--gold)"></div><div class="tl-line"></div></div><div class="tl-time">10:30</div><div class="tl-body"><span class="tl-type type-panel">Panel</span><div class="tl-title">India–Gulf Trade Corridors: The Next Decade</div><p class="tl-desc">Strategic outlook with trade economists and policy makers</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--navy)"></div><div class="tl-line"></div></div><div class="tl-time">12:00</div><div class="tl-body"><span class="tl-type type-networking">Networking</span><div class="tl-title">Exhibition Floor Opens + B2B Round 1</div><p class="tl-desc">All 8 industry halls open — first matchmaking session begins</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--orange)"></div><div class="tl-line"></div></div><div class="tl-time">15:00</div><div class="tl-body"><span class="tl-type type-workshop">Workshop</span><div class="tl-title">Fintech & Digital Payments Workshop</div><p class="tl-desc">India's UPI expansion into Gulf markets — live demo and Q&A</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--navy)"></div></div><div class="tl-time">19:00</div><div class="tl-body"><span class="tl-type type-networking">Networking</span><div class="tl-title">Delegates Welcome Dinner</div><p class="tl-desc">Hosted networking dinner for registered delegates and VIP sponsors</p></div></div>
+        </div>
+        <div id="day2" class="agenda-panel">
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-time">09:00</div><div class="tl-body"><span class="tl-type type-keynote">Keynote</span><div class="tl-title">Saudi Vision 2030: Opportunities for Indian Business</div><p class="tl-desc">Keynote by MISA Director on investment-ready sectors</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--gold)"></div><div class="tl-line"></div></div><div class="tl-time">11:00</div><div class="tl-body"><span class="tl-type type-panel">Panel</span><div class="tl-title">Manufacturing & Make in India — Export Readiness</div><p class="tl-desc">PLI scheme beneficiaries share Gulf market entry journeys</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--navy)"></div><div class="tl-line"></div></div><div class="tl-time">14:00</div><div class="tl-body"><span class="tl-type type-networking">Networking</span><div class="tl-title">B2B Matchmaking Round 2 + Hosted Buyer Programme</div><p class="tl-desc">Curated meetings for hosted buyers with shortlisted Indian suppliers</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--orange)"></div></div><div class="tl-time">16:30</div><div class="tl-body"><span class="tl-type type-workshop">Workshop</span><div class="tl-title">Healthcare & Pharma Innovation Summit</div><p class="tl-desc">Gulf healthcare procurement leaders meet Indian pharma manufacturers</p></div></div>
+        </div>
+        <div id="day3" class="agenda-panel">
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--gold)"></div><div class="tl-line"></div></div><div class="tl-time">09:00</div><div class="tl-body"><span class="tl-type type-panel">Panel</span><div class="tl-title">Agritech & Food Security: India's Role</div><p class="tl-desc">India-Gulf food supply chain and cold-chain investment opportunities</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-time">11:00</div><div class="tl-body"><span class="tl-type type-keynote">Keynote</span><div class="tl-title">MoU Signing Ceremony</div><p class="tl-desc">Live signing of bilateral trade agreements and business partnerships</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot" style="background:var(--orange)"></div><div class="tl-line"></div></div><div class="tl-time">14:00</div><div class="tl-body"><span class="tl-type type-workshop">Workshop</span><div class="tl-title">Startup India × Gulf Investors Pitch Stage</div><p class="tl-desc">10 Indian startups pitch to Gulf-based VC and PE investors live</p></div></div>
+          <div class="timeline-item"><div class="tl-left"><div class="tl-dot"></div></div><div class="tl-time">17:00</div><div class="tl-body"><span class="tl-type type-keynote">Keynote</span><div class="tl-title">Closing Ceremony & Trade Excellence Awards 2026</div><p class="tl-desc">Recognising outstanding partnerships and successful deal-making</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS — MARQUEE -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-header fade-in">
+      <span class="te-eyebrow">Testimonials</span>
+      <h2 class="te-headline">Real Results. <em>Real Voices.</em></h2>
+    </div>
+  </div>
+  <div class="marquee-wrap fade-in">
+    <div class="marquee-track">
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"We signed three distributor agreements during the expo. Within six months, we shipped our first container to Riyadh. The ROI on our booth was 12x."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--teal)">PJ</div><div><div class="testi-name">Pradeep Joshi</div><div class="testi-company">MD, Joshi Agro Exports</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"As a Saudi buyer, I sourced 4 new Indian suppliers in 2 days. The matchmaking system worked brilliantly — every meeting was decision-ready."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--gold)">KA</div><div><div class="testi-name">Khalid Al-Amri</div><div class="testi-company">Procurement Head, Al-Amri Trading</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"The conference sessions were genuinely insightful. Sector-specific content, policy briefings, and the networking dinner sealed an investment deal worth ₹40 crore."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--orange)">SR</div><div><div class="testi-name">Sunita Reddy</div><div class="testi-company">CEO, Reddy Infrastructure Ltd.</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Best trade expo I've attended in 15 years. The organisation, the B2B system, the speakers — everything was world-class. We'll be back every year."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--navy-mid)">MN</div><div><div class="testi-name">Mohammed Nasser</div><div class="testi-company">VP Sourcing, Gulf Retail Group</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"We signed three distributor agreements during the expo. Within six months, we shipped our first container to Riyadh. The ROI on our booth was 12x."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--teal)">PJ</div><div><div class="testi-name">Pradeep Joshi</div><div class="testi-company">MD, Joshi Agro Exports</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"As a Saudi buyer, I sourced 4 new Indian suppliers in 2 days. The matchmaking system worked brilliantly — every meeting was decision-ready."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--gold)">KA</div><div><div class="testi-name">Khalid Al-Amri</div><div class="testi-company">Procurement Head, Al-Amri Trading</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"The conference sessions were genuinely insightful. Sector-specific content, policy briefings, and the networking dinner sealed an investment deal worth ₹40 crore."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--orange)">SR</div><div><div class="testi-name">Sunita Reddy</div><div class="testi-company">CEO, Reddy Infrastructure Ltd.</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Best trade expo I've attended in 15 years. The organisation, the B2B system, the speakers — everything was world-class. We'll be back every year."</p><div class="testi-author"><div class="testi-avatar" style="background:var(--navy-mid)">MN</div><div><div class="testi-name">Mohammed Nasser</div><div class="testi-company">VP Sourcing, Gulf Retail Group</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-bg-word">TRADE</div>
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <span class="cta-eyebrow">Your Next Trade Partner is Already Registered</span>
+      <h2 class="cta-headline">
+        Join the Future of<br>
+        <em>Global Trade</em>
+      </h2>
+      <p class="cta-sub">Over 10,000 applications expected. Secure your place before registrations close.</p>
+      <div class="cta-buttons">
+        <a href="#" class="cta-btn-a" data-modal="exhibitor">Register Now</a>
+        <a href="#" class="cta-btn-b" data-modal="exhibitor">Book a Booth</a>
+      </div>
+      <div class="cta-trust">
+        <span class="cta-trust-item">Free Visitor Entry</span>
+        <span class="cta-trust-item">Government Endorsed</span>
+        <span class="cta-trust-item">B2B Matchmaking Included</span>
+        <span class="cta-trust-item">Visa Assistance Available</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="static/images/Indo_Gulf_Expos.png" alt="Indo Gulf Expos" style="height:56px;width:auto;display:block;margin-bottom:20px;">
+          <p class="footer-tagline">The definitive platform bridging Indian industry with Gulf markets. Trade. Invest. Grow.</p>
+          <div class="footer-socials">
+            <a class="footer-social" href="#">in</a>
+            <a class="footer-social" href="#">X</a>
+            <a class="footer-social" href="#">f</a>
+            <a class="footer-social" href="#">▶</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="#about">About the Expo</a></li>
+            <li><a href="#why">Why Exhibit</a></li>
+            <li><a href="#sectors">Industry Sectors</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="#"><span class="__cf_email__" data-cfemail="b3daddd5dcf3daddd7dcd4c6dfd5d6cbc3dc9dd0dcde">[email&#160;protected]</span></a></li>
+            <li><a href="#">+91 98765 43210</a></li>
+            <li><a href="#">+966 11 234 5678</a></li>
+            <li><a href="#">Riyadh Exhibition Centre</a></li>
+            <li><a href="#">14–16 November 2026</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Stay Updated</div>
+          <p class="newsletter-note">Get speaker announcements, exhibitor guides, and event updates.</p>
+          <div class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="your@email.com">
+            <button class="newsletter-btn">Subscribe →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Indo Gulf Trade Expo. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- REGISTRATION MODAL -->
+<div id="reg-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-header">
+      <span class="modal-title" id="modal-title">Register for Expo</span>
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-tabs" style="margin-top:20px;">
+      <button class="modal-tab active" data-form="exhibitor">Exhibitor</button>
+      <button class="modal-tab" data-form="visitor">Visitor</button>
+      <button class="modal-tab" data-form="sponsor">Sponsor</button>
+    </div>
+
+    <!-- Exhibitor Form -->
+    <form class="modal-form active" id="form-exhibitor" novalidate>
+      <p class="modal-subtitle">Book your booth and connect with 20,000+ Gulf buyers.</p>
+      <div class="form-row">
+        <div class="form-group"><label>Full Name *</label><input type="text" name="name" placeholder="Rajiv Sharma" required></div>
+        <div class="form-group"><label>Company Name *</label><input type="text" name="company" placeholder="Acme Exports Ltd." required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email *</label><input type="email" name="email" placeholder="you@company.com" required></div>
+        <div class="form-group"><label>Phone *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Industry *</label><input type="text" name="industry" placeholder="e.g. Manufacturing" required></div>
+        <div class="form-group"><label>Booth Size *</label>
+          <select name="booth" required>
+            <option value="">Select size</option>
+            <option>9 sqm (3×3)</option>
+            <option>18 sqm (3×6)</option>
+            <option>36 sqm (6×6)</option>
+            <option>Custom / Large</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label>Message</label><textarea name="message" placeholder="Tell us about your products or requirements…"></textarea></div>
+      <button type="submit" class="modal-submit">Submit Booth Inquiry →</button>
+    </form>
+
+    <!-- Visitor Form -->
+    <form class="modal-form" id="form-visitor" novalidate>
+      <p class="modal-subtitle">Free entry. Pre-schedule B2B meetings before you arrive.</p>
+      <div class="form-row">
+        <div class="form-group"><label>Full Name *</label><input type="text" name="name" placeholder="Khalid Al-Amri" required></div>
+        <div class="form-group"><label>Email *</label><input type="email" name="email" placeholder="you@company.com" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Phone *</label><input type="tel" name="phone" placeholder="+966 50 000 0000" required></div>
+        <div class="form-group"><label>Company</label><input type="text" name="company" placeholder="Optional"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Job Title *</label><input type="text" name="jobtitle" placeholder="e.g. Procurement Head" required></div>
+        <div class="form-group"><label>Country *</label><input type="text" name="country" placeholder="e.g. Saudi Arabia" required></div>
+      </div>
+      <button type="submit" class="modal-submit">Register Free →</button>
+    </form>
+
+    <!-- Sponsor Form -->
+    <form class="modal-form" id="form-sponsor" novalidate>
+      <p class="modal-subtitle">Own your category across the India–Gulf trade corridor.</p>
+      <div class="form-row">
+        <div class="form-group"><label>Full Name *</label><input type="text" name="name" placeholder="Sunita Reddy" required></div>
+        <div class="form-group"><label>Company Name *</label><input type="text" name="company" placeholder="Reddy Infrastructure Ltd." required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email *</label><input type="email" name="email" placeholder="you@company.com" required></div>
+        <div class="form-group"><label>Phone *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Sponsorship Interest *</label>
+          <select name="interest" required>
+            <option value="">Select type</option>
+            <option>Title Sponsor</option>
+            <option>Co-Sponsor</option>
+            <option>Keynote Stage Sponsor</option>
+            <option>Networking Lounge Sponsor</option>
+            <option>Digital / Media Sponsor</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Budget Range *</label>
+          <select name="budget" required>
+            <option value="">Select range</option>
+            <option>₹10L – ₹25L</option>
+            <option>₹25L – ₹50L</option>
+            <option>₹50L – ₹1Cr</option>
+            <option>Above ₹1Cr</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label>Message</label><textarea name="message" placeholder="Describe your sponsorship goals…"></textarea></div>
+      <button type="submit" class="modal-submit">Submit Sponsorship Inquiry →</button>
+    </form>
+
+    <!-- Success -->
+    <div class="modal-success" id="modal-success">
+      <div class="modal-success-icon">✓</div>
+      <h3>Inquiry Received!</h3>
+      <p>Thank you. Our team will reach out within 24 hours to confirm your registration.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TWEAKS PANEL -->
+<div id="tweaks-panel">
+  <div class="tweaks-title">Tweaks</div>
+  <div class="tweak-row">
+    <label class="tweak-label">Accent Color</label>
+    <div class="tweak-colors">
+      <div class="tweak-swatch on" style="background:#0A8C87" onclick="setAccent('#0A8C87','#12B5AF',this)"></div>
+      <div class="tweak-swatch" style="background:#2563EB" onclick="setAccent('#2563EB','#3B82F6',this)"></div>
+      <div class="tweak-swatch" style="background:#7C3AED" onclick="setAccent('#7C3AED','#8B5CF6',this)"></div>
+      <div class="tweak-swatch" style="background:#C8A037" onclick="setAccent('#C8A037','#D4AF4A',this)"></div>
+      <div class="tweak-swatch" style="background:#E11D48" onclick="setAccent('#E11D48','#F43F5E',this)"></div>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <label class="tweak-label">Dark Base</label>
+    <select class="tweak-select" onchange="setNavy(this.value)">
+      <option value="#0A0F1E">Near Black (default)</option>
+      <option value="#06173A">Deep Navy</option>
+      <option value="#1A0A00">Dark Mahogany</option>
+      <option value="#001A1A">Deep Teal Dark</option>
+    </select>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Countdown
+function updateCountdown() {
+  const target = new Date('2026-11-14T09:00:00+03:00');
+  const now = new Date();
+  const diff = target - now;
+  if (diff <= 0) return;
+  const pad = n => String(n).padStart(2,'0');
+  document.getElementById('cd-days').textContent = pad(Math.floor(diff/86400000));
+  document.getElementById('cd-hours').textContent = pad(Math.floor((diff%86400000)/3600000));
+  document.getElementById('cd-mins').textContent = pad(Math.floor((diff%3600000)/60000));
+  document.getElementById('cd-secs').textContent = pad(Math.floor((diff%60000)/1000));
+}
+updateCountdown(); setInterval(updateCountdown, 1000);
+
+// Video facade
+document.getElementById('main-facade').addEventListener('click', function() {
+  const id = this.dataset.id;
+  document.getElementById('main-video').src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+  this.classList.add('hidden');
+});
+
+function switchVideo(idx) {
+  const thumbs = document.querySelectorAll('.video-thumb');
+  thumbs.forEach(t => t.classList.remove('active'));
+  thumbs[idx].classList.add('active');
+  const id = thumbs[idx].dataset.id;
+  const facade = document.getElementById('main-facade');
+  // reset facade with new thumbnail
+  facade.dataset.id = id;
+  facade.querySelector('img').src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+  facade.classList.remove('hidden');
+  // clear iframe so old video stops
+  document.getElementById('main-video').src = '';
+  document.getElementById('main-label').textContent = thumbs[idx].dataset.label;
+  document.getElementById('main-title').textContent = thumbs[idx].dataset.title;
+}
+
+// Agenda
+function switchDay(btn, id) {
+  document.querySelectorAll('.agenda-day-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.agenda-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+
+// Scroll fade
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }});
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach((el,i) => {
+  el.style.transitionDelay = `${(i%4)*70}ms`;
+  observer.observe(el);
+});
+
+// Tweaks
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accentColor": "#0A8C87",
+  "accentLight": "#12B5AF",
+  "navyColor": "#0A0F1E"
+}/*EDITMODE-END*/;
+
+window.addEventListener('message', e => {
+  if(e.data?.type==='__activate_edit_mode') document.getElementById('tweaks-panel').classList.add('visible');
+  if(e.data?.type==='__deactivate_edit_mode') document.getElementById('tweaks-panel').classList.remove('visible');
+});
+window.parent.postMessage({type:'__edit_mode_available'},'*');
+
+function setAccent(c, l, el) {
+  document.querySelectorAll('.tweak-swatch').forEach(s=>s.classList.remove('on'));
+  el.classList.add('on');
+  document.documentElement.style.setProperty('--teal', c);
+  document.documentElement.style.setProperty('--teal-light', l);
+  window.parent.postMessage({type:'__edit_mode_set_keys', edits:{accentColor:c, accentLight:l}},'*');
+}
+function setNavy(c) {
+  document.documentElement.style.setProperty('--ink', c);
+  window.parent.postMessage({type:'__edit_mode_set_keys', edits:{navyColor:c}},'*');
+}
+
+// ── Modal ──
+var openModal;
+(function() {
+  const modal   = document.getElementById('reg-modal');
+  const box     = modal.querySelector('.modal-box');
+  const tabs    = modal.querySelectorAll('.modal-tab');
+  const forms   = modal.querySelectorAll('.modal-form');
+  const success = document.getElementById('modal-success');
+  const closeBtn= document.getElementById('modal-close');
+
+  openModal = function(type) {
+    success.classList.remove('active');
+    forms.forEach(f => f.classList.remove('active'));
+    tabs.forEach(t => t.classList.remove('active'));
+    const target = document.getElementById('form-' + type);
+    const tab    = modal.querySelector('[data-form="' + type + '"]');
+    if (target) target.classList.add('active');
+    if (tab)    tab.classList.add('active');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Trigger buttons
+  document.querySelectorAll('[data-modal]').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      openModal(this.dataset.modal);
+    });
+  });
+
+  // Tab switching
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      openModal(this.dataset.form);
+    });
+  });
+
+  // Close button
+  closeBtn.addEventListener('click', closeModal);
+
+  // Outside click
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) closeModal();
+  });
+
+  // Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  // Form validation + submit
+  modal.querySelectorAll('.modal-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let valid = true;
+      this.querySelectorAll('[required]').forEach(field => {
+        field.classList.remove('error');
+        if (!field.value.trim()) {
+          field.classList.add('error');
+          valid = false;
+        }
+      });
+      if (!valid) return;
+      forms.forEach(f => f.classList.remove('active'));
+      tabs.forEach(t => t.classList.remove('active'));
+      success.classList.add('active');
+      this.reset();
+    });
+  });
+})();
+
+// Auto-open modal after 2s
+setTimeout(() => openModal('exhibitor'), 2000);
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').style.borderBottomColor = window.scrollY > 60 ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.07)';
+});
+</script>
+</body>
+</html>
